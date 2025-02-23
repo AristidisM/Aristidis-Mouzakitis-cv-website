@@ -7,10 +7,10 @@ body {
     background-color: #f8f8f8;
 }
 
-header, section, footer {
-    padding: 30px;
-    max-width: 900px;
-    margin: 0 auto;
+header, footer {
+    /* Removed max-width and auto margins */
+    padding: 20px 30px; /* Adjusted padding */
+    width: 100%; /* Ensures full width */
     box-sizing: border-box;
 }
 
@@ -27,7 +27,10 @@ header h1 {
 }
 
 section {
-    margin-bottom: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 section h2 {
@@ -71,7 +74,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Specific skill and language section changes */
 #skills ul, #languages ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -90,7 +92,6 @@ footer a:hover {
     text-align: center;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     header, section, footer {
         padding: 20px;
